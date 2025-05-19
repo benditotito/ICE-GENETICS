@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Genetics | Joyas de Plata 925 y Diamantes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 1.5rem; color: #00d4ff; }
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-left: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #00d4ff; }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1618429316666-8c2bd93fc3cb') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h3 {
+      color: #00d4ff;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      background-color: #1f1f1f;
+      color: #f5f5f5;
+      border: 1px solid #333;
+      border-radius: 0.5rem;
+    }
+    form button {
+      background-color: #00d4ff;
+      color: #121212;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #00d4ff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ice Genetics</h1>
+    <nav>
+      <a href="#blog">Blog</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Elegancia en Plata 925 y Diamantes</h2>
+  </section>
+
+  <section class="section" id="blog">
+    <h3>Blog</h3>
+    <p>Bienvenido a nuestro blog, donde compartimos consejos sobre cuidado de joyas, tendencias de moda, y más.</p>
+  </section>
+
+  <section class="section" id="galeria">
+    <h3>Galería</h3>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1587614382346-4ec1d65c1f79" alt="Joya 1">
+      <img src="https://images.unsplash.com/photo-1606039905911-99f9861062f5" alt="Joya 2">
+      <img src="https://images.unsplash.com/photo-1574043471172-7ea2c2a7a550" alt="Joya 3">
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h3>Contacto</h3>
+    <form action="#" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="correo" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ice Genetics. Todos los derechos reservados.</p>
+    <p>Síguenos en: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">TikTok</a></p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+  </footer>
+</body>
+</html>
